@@ -14,5 +14,5 @@ BEGIN
         WHERE       s.ID_SERVICE = NVL(pID, s.ID_SERVICE)
         GROUP BY    s.ID_SERVICE,
                     s.V_NAME
-        ORDER BY    MIN(s.V_NAME);
+        ORDER BY    s.V_NAME;
 END get_service_by_id;
