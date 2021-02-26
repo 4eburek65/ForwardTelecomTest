@@ -1,14 +1,14 @@
 WITH cte AS (
     SELECT  'A' V_STATUS, 
-            'Активен' STATUS_TITLE
+            'РђРєС‚РёРІРµРЅ' STATUS_TITLE
     FROM    dual
     UNION ALL
     SELECT  'B', 
-            'Заблокирован'
+            'Р—Р°Р±Р»РѕРєРёСЂРѕРІР°РЅ'
     FROM    dual
     UNION ALL
-    SELECT  'С', 
-            'Расторгнут'
+    SELECT  'C', 
+            'Р Р°СЃС‚РѕСЂРіРЅСѓС‚'
     FROM    dual
 )
 
