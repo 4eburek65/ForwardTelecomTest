@@ -18,4 +18,5 @@ SELECT      c.V_STATUS,
 FROM        cte c
             LEFT JOIN CONTRACTS co 
                 ON co.V_STATUS = c.V_STATUS
-GROUP BY    c.V_STATUS, c.STATUS_TITLE
+GROUP BY    c.V_STATUS,
+            c.STATUS_TITLE
