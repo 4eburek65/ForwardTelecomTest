@@ -7,6 +7,7 @@ WITH cte AS (
     WHERE       c.V_EXT_IDENT = 'XXX'
     ORDER BY    b.DT_EVENT DESC
 )
+
 SELECT  c.F_SUM
 FROM    cte c 
 WHERE   TRUNC(c.DT_EVENT, 'DDD') <= TRUNC(SYSDATE, 'DDD') 
