@@ -1,0 +1,10 @@
+SELECT      s.V_NAME
+FROM        SERVICES ss
+            INNER JOIN CONTRACTS c
+                ON ss.ID_CONTRACT_INST = c.ID_CONTRACT_INST
+            INNER JOIN SERVICE s
+                ON s.ID_SERVICE = ss.ID_SERVICE
+GROUP BY    ss.ID_SERVICE,
+            s.V_NAME
+HAVING      COUNT(DISTINCT c. ID_DEPARTMENT) = 1
+
